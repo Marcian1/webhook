@@ -21,7 +21,7 @@ app.get('/', (req, res)=>{
 app.post('/', express.json(), (req, res)=>{
     const agent = new dfff.WebhookClient({
         request : req,
-        response : res
+         response : res
     });
     console.log(JSON.stringify(req.body));
 
